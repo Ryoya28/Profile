@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+html{
+  /*100%にすることでユーザーがブラウザで設定したフォントサイズが反映される*/
+  font-size: 100%;
+}
+
+body{
+  color: #383e45;
+  font-size: 0.9rem;
+}
+
+a{
+  /*サイト内のリンクに下線が表示されないようにする*/
+  text-decoration: none;
+}
+
+img{
+  /*こうすることで画像が横幅より飛び出ない*/
+  max-width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+h1{
+  line-height: 0;
+}
+
+.site-title{
+  width: 120px;
+  line-height: 1px;
+  padding: 10px,0;
+}
+
+.site-title a {
+  /*aタグリンク範囲を親要素サイズに広げる*/
+  display: block;
+}
+
+/*h2タグ用*/
+.section-title{
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+}
+
+/*h3タグ用*/
+.contet-title{
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+/*画面の最大幅を指定。共通で使用*/
+.wrapper{
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+/*ヘッダー*/
+#header{
+  display: flex;/*h1とnavを横並びに表示する*/
+  justify-content: space-between;/*両端に揃える*/
+  align-items: center;/*高さを中央で揃える*/
+  margin: 0 auto;
+}
+
+#header ul {
+  display: flex;/*liタグを横並びにする*/
+  padding: 10px 0;
+}
+
+#header li {
+  margin-left: 30px;
+}
+
+#header li a {
+  color: #24292e;
+}
+
+#header li a:hover {
+  opacity: 0.7;/*メニューにマウスを乗せた時少し透過させる*/
+}
+
+/*Mainvisual*/
+#mainvisual{
+  margin-bottom: 80px;
+}
+
+#mainvisual img {
+  width: 100%;
+  max-width: 1920px;/*画像の横幅に合わせる*/
+  height: 600px;/*縦の高さを固定する*/
+  object-fit: cover;/*横幅を画像サイズに合わせて伸縮させる*/
+}
+
+@media screen and (max-width: 600px){
+  #mainvisual img {
+    height: calc(100vh - 60px);/*画像高さをブラウザいっぱいまで広げる(100vhが画像縦幅いっぱいを表す)*/
+  }
+}
+
+/*About*/
+#about .content {
+  display: flex;/*画像とテキストを横並びに*/
+  justify-content: center;
+  align-items: center;
+}
+
+#about img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;/*画像を丸く切り取る(丸のサイズはwidthとheightで指定できる)*/
+  margin-right: 30px;
+}
+
+#about .text{
+  text-align: left;
+}
+
+@media screen and (max-width: 600px){
+  #about .content{
+    flex-direction: column;
+  }
+  #about img {
+    margin-right: 0;
+  }
+}
+
+/*Portfolio*/
+#portfolio ul {
+  display: flex;/*画像を横並びに*/
+  justify-content: space-between;/*両端で揃える*/
+}
+
+#portfolio li {
+  width: 32%;
+}
+
+@media screen and (max-width: 600px){
+  #portfolio ul {
+    flex-direction: column;/*画像を縦並びに*/
+  }
+  #portfolio li {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+/*footer*/
+#footer{
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+
+

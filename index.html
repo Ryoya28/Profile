@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Profile</title>
+
+  <meta name="description" content="テキスト">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <!--ヘッダー-->
+  <header id="header" class="wrapper">
+    <h1 class="site-title">
+      <!-- aタグで囲むことでロゴにリンクを取得する(リンク先はindex.htmlトップページ)-->
+      <a href="index.html"><img src="img/logo.svg" alt="Profile"></a>     
+    </h1>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!--メイン-->
+  <main>
+    <div id="mainvisual">
+      <img src="img/mainvisual.jpg" alt="テキスト">
+    </div>
+
+    <!--Aboutセクション-->
+    <section id="about" class="wrapper">
+      <h2 class="section-title">About</h2>
+      <div class="content">
+        <img src="img/about.jpg" alt="Plofile">
+        <div class="Plofile">
+          <h3 class="content-title">Ryoya Suzuki</h3>
+          <p>
+            東京都板橋区生まれ、足立区育ち。</br>
+            商業高校卒業後、中央工学校 建築設計科へ進学。</br>
+            ITで出来ることの無限大さに惹かれITプログラマーとしての道を目指す。</br>
+            目指すはITマスター。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Portfolioセクション-->
+    <section id="portfolio" class="wrapper">
+      <h2 class="section-title">Portfolio</h2>
+      <ul>
+        <li>
+          <img src="img/portfolio1.ipg" alt="簡単クイズ">
+          <h3 class="content-title">簡単クイズ</h3>
+          <p>javascript復習用にクイズアプリを作成。</p>
+        </li>
+        <li>
+          <img src="img/portfolio2.ipg" alt="テキスト">
+          <h3 class="content-title">タイトル</h3>
+          <p>テキスト</p>
+        </li>
+        <li>
+          <img src="img/portfolio3.ipg" alt="テキスト">
+          <h3 class="content-title">タイトル</h3>
+          <p>テキスト</p>
+        </li>
+      </ul>
+    </section>
+  
+  </main>
+
+  <footer id="footer">
+    <p>2022 Profile</p>
+  </footer>
+
+</body>
+
+</html>
